@@ -1,29 +1,21 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "VulnLabs",
+  description: "",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
+      label: "漏洞列表",
+      href: "/vulns",
     },
     {
       label: "About",
       href: "/about",
-    },
+    }
   ],
   navMenuItems: [
     {

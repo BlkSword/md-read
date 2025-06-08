@@ -11,28 +11,21 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Make&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
+        <span className={title()}>VulnLabs&nbsp;</span>
+        <span className={title({ color: "violet" })}>Vulhub&nbsp;</span>
         <br />
-        <span className={title()}>
-          websites regardless of your design experience.
-        </span>
+        <span className={title()}>漏洞复现与学习平台</span>
         <div className={subtitle({ class: "mt-4" })}>
-          Beautiful, fast and modern React UI library.
+          专注于Vulhub漏洞场景的复现演示与学习资料整合
         </div>
       </div>
 
       <div className="flex gap-3">
         <Link
-          isExternal
-          className={buttonStyles({
-            color: "primary",
-            radius: "full",
-            variant: "shadow",
-          })}
-          href={siteConfig.links.docs}
+          className={buttonStyles({ color: "primary", radius: "full", variant: "shadow" })}
+          href="/vulns"
         >
-          Documentation
+          查看漏洞列表
         </Link>
         <Link
           isExternal
