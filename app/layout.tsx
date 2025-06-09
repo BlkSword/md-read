@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
 };
 
@@ -42,12 +41,19 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
+          {/* 页面容器 */}
+          <div className="flex min-h-screen flex-col items-center justify-center">
+            {/* 导航栏组件 */}
             <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+
+            {/* 主要内容区域 */}
+            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow mt-10">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
+
+            {/* 页脚 */}
+            <footer className="w-full flex items-center justify-center py-5">
+              {/* 外部链接组件 */}
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"

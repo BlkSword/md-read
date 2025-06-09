@@ -4,8 +4,13 @@ export const siteConfig = {
   name: "VulnLabs",
   description: "",
   navItems: [
+    { label: "主页", href: "/" },
+    { label: "漏洞列表", href: "/vulns" },
+    { label: "关于", href: "/about" },
+  ],
+  navMenuItems: [
     {
-      label: "Home",
+      label: "主页",
       href: "/",
     },
     {
@@ -13,49 +18,11 @@ export const siteConfig = {
       href: "/vulns",
     },
     {
-      label: "About",
+      label: "关于",
       href: "/about",
-    }
-  ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/vulnlabs"
   },
 };
