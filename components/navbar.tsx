@@ -5,7 +5,6 @@
 import { Navbar as HerouiNavbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@heroui/react";
 import { Logo } from "@/components/icons";
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon } from "@/components/icons";
 import { usePathname } from "next/navigation";
 
@@ -47,7 +46,6 @@ export const Navbar = () => {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
     </HerouiNavbar>

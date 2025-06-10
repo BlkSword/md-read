@@ -45,20 +45,8 @@ export default function RootLayout({
                 <div className="flex min-h-screen flex-col">
                     {/* 主要内容区域 */}
                     <main className="container mx-auto max-w-7xl px-6 flex-grow">
-                        <Navbar />
                         {children}
                     </main>
-
-                    {/* 页脚 */}
-                    <footer className="w-full flex items-center justify-center py-5">
-                        <Link
-                            isExternal
-                            className="flex items-center gap-1 text-current"
-                            href="https://github.com/BlkSword/VulnLabs"
-                        >
-                            <span className="text-default-600">Powered by BlkSword</span>
-                        </Link>
-                    </footer>
                 </div>
             </body>
         </html>

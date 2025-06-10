@@ -43,9 +43,9 @@ export default function RootLayout({
 
                 {/* 页面容器 */}
                 <div className="flex min-h-screen flex-col">
+                    <Navbar />
                     {/* 主要内容区域 */}
-                    <main className="container mx-auto max-w-7xl px-6 flex-grow">
-                        <Navbar />
+                    <main className="container mx-auto max-w-7xl px-6 flex-grow mt-20">
                         {children}
                     </main>
 

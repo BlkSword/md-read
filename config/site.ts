@@ -21,6 +21,10 @@ export const siteConfig = {
       label: "关于",
       href: "/about",
     },
+    {
+      label: "登录",
+      href: "/login",
+    },
   ],
   links: {
     github: "https://github.com/vulnlabs"
